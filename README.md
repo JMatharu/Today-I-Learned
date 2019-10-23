@@ -39,12 +39,9 @@ eg. `docker run --name mysql -e MYSQL_USER=til -e MYSQL_PASSWORD=password -e MYS
 
 ## API Documentation
 
-- Acronums
+- Acronyms
 	- Get all Acronums (Get) - `/api/acronyms`
 	- Create Acronym (Post) - `/api/acronyms`
-			- short: String
-			- long: String
-			- createrID: UUID
 	- Get Acronym (Get) - `/api/acronyms/{acronymID}`
 	- Delete Acronym (Delete) - `/api/acronyms/{acronymID}`
 	- Update Acronym (Put) - `/api/acronyms/{acronymID}`
