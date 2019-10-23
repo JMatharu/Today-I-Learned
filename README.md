@@ -18,3 +18,37 @@
         <img src="http://img.shields.io/badge/swift-5.1-brightgreen.svg" alt="Swift 5.1">
     </a>
 </p>
+
+# Welcome to Today I learned!
+
+A simple server side swift app for **Acronyms**.
+
+# Controllers
+
+- Acronums
+- Users
+- Categories
+
+## Hosting Enviornment
+
+### Prerequisite
+- Docker - Run container with MySQL for the app to run on.
+eg. `docker run --name mysql -e MYSQL_USER=til -e MYSQL_PASSWORD=password -e MYSQL_DATABASE=vapor  -p 3306:3306 -d mysql/mysql-server:5.7`
+
+`mysql` - Container name
+
+## API Documentation
+
+- Acronums
+	- Get all Acronums (Get) - `/api/acronyms`
+	- Create Acronym (Post) - `/api/acronyms`
+			- short: String
+			- long: String
+			- createrID: UUID
+	- Get Acronym (Get) - `/api/acronyms/{acronymID}`
+	- Delete Acronym (Delete) - `/api/acronyms/{acronymID}`
+	- Update Acronym (Put) - `/api/acronyms/{acronymID}`
+	- Get Creator for Acronym (Get) - `/api/acronyms/{acronymID}/creator`
+	- Get Categories for Acronym (Get) - `/api/acronyms/{acronymID}/categories`
+	- Add Category to Acronym (Post) - `/api/acronyms/{acronymID}/categories/{categoryID}`
+	- Search Acronym -  `/api/acronyms/search`
