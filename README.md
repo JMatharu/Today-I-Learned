@@ -49,3 +49,15 @@ eg. `docker run --name mysql -e MYSQL_USER=til -e MYSQL_PASSWORD=password -e MYS
 	- Get Categories for Acronym (Get) - `/api/acronyms/{acronymID}/categories`
 	- Add Category to Acronym (Post) - `/api/acronyms/{acronymID}/categories/{categoryID}`
 	- Search Acronym -  `/api/acronyms/search`
+
+- Users
+	- Get all users (Get) - `api/users`
+	- Create user (Post) - `api/users`
+	- Get user (Get) - `api/users/{userID}`
+	- Get acronym for user - `api/users/{userID}/acronym/`
+
+- Categories
+	- Get all categories (Get) - `api/categories`
+	- Create category (Post) -  `api/categories`
+	- Get category (Get) - `api/categories/{categoryID}`
+	- Get list of acronym for category - `api/categories/{categoryID}/acronyms/`
